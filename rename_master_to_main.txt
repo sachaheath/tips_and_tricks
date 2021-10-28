@@ -1,0 +1,18 @@
+# Rename Git repositories from "Master" to "Main" because the master slave language is racist and awful
+# From: https://hackernoon.com/how-to-rename-your-git-repositories-from-master-to-main-6i1u3wsu
+
+# At local repository:
+
+git branch -m master main	# rename the local "master" branch in local repositories to "main"
+git branch  				# confirm
+git checkout main 		# confirm that your current HEAD branch is the newly created "main". 
+git push -u origin main 	# push this branch to create it on the remote
+
+
+# At remote repository:
+# Go to repository
+# Go to settings > branches
+# Change default branch to main and confirm
+
+# At local repository:
+git push origin --delete master		# delete the "master" from remote via local
