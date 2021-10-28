@@ -1,0 +1,39 @@
+My favorite answer from : https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign 
+Author: https://stackoverflow.com/users/6605031/arslan-ahmad-khan
+
+Do the following steps for a file/folder:
+
+Remove a File:
+
+need to add that file to .gitignore.
+need to remove that file using the command (git rm --cached file name).
+need to run (git add .).
+need to (commit -m) "file removed".
+and finally, (git push).
+For example:
+
+I want to delete the test.txt file. I accidentally pushed to GitHub and want to remove it. Commands will be as follows:
+
+First, add "test.txt" in file .gitignore
+
+git rm --cached test.txt
+git add .
+git commit -m "test.txt removed"
+git push
+Remove Folder:
+
+need to add that folder to file .gitignore.
+need to remove that folder using the command (git rm -r --cached folder name).
+need to run (git add .).
+need to (commit -m) "folder removed".
+and finally, (git push).
+For example:
+
+I want to delete the .idea folder/directory. I accidentally pushed to GitHub and want to remove it. The commands will be as follows:
+
+First, add .idea in file .gitignore
+
+git rm -r --cached .idea
+git add .
+git commit -m ".idea removed"
+git push
