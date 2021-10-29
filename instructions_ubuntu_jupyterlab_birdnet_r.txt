@@ -1,0 +1,29 @@
+## Basic useage of JupyterLab, R, etc. from ubuntu wsl command line
+
+# 1. open ubuntu WSL
+# 2. navigate to local working folder with .ipynb files
+# 2. open birdnet environment 
+# 3. open jupyter lab
+# 4. Open jupyter lab with web links
+# 5. May need to renavigate to folder in console / terminal within JupyterLab
+
+
+For example:
+cd mnt/f/sacha_drive/research_audio/birdnet
+conda activate birdnet
+jupyter lab
+copy paste link into browser
+Then find the xxx.ipynb, etc.
+
+
+#R & Rstudio
+For starting up base R from ubuntu command prompt: R
+to quit: q()
+
+R library in python is:
+/home/sacha/R/x86_64-pc-linux-gnu-library/3.6
+
+To launch Rstudio server from ubuntu command line:
+sudo rstudio-server start
+open browser
+Enter unix password
